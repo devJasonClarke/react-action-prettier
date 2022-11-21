@@ -1,13 +1,13 @@
 .btn {
-    background-color:      rgb(7, 7, 62);
+  background-color: rgb(7, 7, 62);
   p {
-                                 color: white;
+    color: white;
   }
   &:hover {
-    background-color:         green;
+    background-color: green;
 
     p {
-      color       : red;
+      color: red;
     }
   }
 }
