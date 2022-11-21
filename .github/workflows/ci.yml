@@ -1,4 +1,4 @@
-name: Format
+name: Prettier Format
 on:
   pull_request:
     branches: [main]
@@ -12,11 +12,11 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: "14.x"
-      - name: NPM or Yarn install with caching    
+      - name: NPM or Yarn install with caching
         uses: bahmutov/npm-install@v1.6.0
       - run: npm run format
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Apply formatting changes
+          commit_message: "style: Apply formatting changes"
           branch: ${{ github.head_ref }}
