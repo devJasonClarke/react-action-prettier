@@ -1,6 +1,6 @@
 name: Prettier Format
 on:
-  push:
+  pull_request:
     branches: [main]
 jobs:
   format:
